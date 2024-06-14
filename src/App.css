@@ -1,38 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #8758ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.TodoWrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.TodoForm {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-bottom: 20px;
+}
+
+.todo-input {
+  padding: 10px;
+  font-size: 16px;
+  width: 70%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.todo-btn {
+  padding: 10px;
+  font-size: 16px;
+  margin-left: 10px;
+  background-color: #28a745;
   color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.Todo {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.completed {
+  text-decoration: line-through;
+  color: grey;
+}
+
+.incompleted {
+  text-decoration: none;
+  color: black;
+}
+
+.edit-icon,
+.delete-icon {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+span {
+  color: green;
+  font-weight: bold;
+  margin-right: 10px;
 }
